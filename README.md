@@ -1,2 +1,2 @@
 # ML_Coursera
-Projects in Machine Learning
+Projects in Machine Learning.
