@@ -21,6 +21,16 @@ grad = zeros(size(theta));
 %
 
 
+predictions =  sigmoid(X*theta);
+
+leftPart = -y' * log(predictions);
+
+rightPart = (1 - y') * log(1 - predictions);
+
+J = (1 / m) * (leftPart - rightPart);
+
+grad = (1 / m) * ((predictions - y)' * X);
+
 
 
 
